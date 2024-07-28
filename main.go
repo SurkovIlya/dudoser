@@ -13,8 +13,11 @@ type Message struct {
 	Value string `json:"value"`
 }
 
+// set actual host
 const host = "%host%:8080/v1/receiving"
-const rps = 2
+
+// set rps
+const rps = 200
 
 func main() {
 	var (
